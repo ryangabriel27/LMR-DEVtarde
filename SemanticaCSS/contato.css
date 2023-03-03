@@ -1,0 +1,48 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 24, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.parte1 {
+    background-color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 50px 20px;
+    border: 2px rgb(207, 205, 202);
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px
+}
+
+input {
+    background-color: rgb(53, 53, 53);
+    font-weight: bold;
+    color: white;
+
+}
+
+textarea {
+    background-color: rgb(53, 53, 53);
+    font-weight: bold;
+    color: white;
+}
+
+.enviar {
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(2, 2, 80, 0.992);
+
+
+}
