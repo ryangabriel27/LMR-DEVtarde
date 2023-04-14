@@ -2,10 +2,33 @@ body {
     background-color: white;
     margin: 0;
 }
+
 #menu {
     width: 100%;
     height: 90px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linkMenu {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link {
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.hamburger {
+    display: none;
 }
 
 #menu img {
@@ -13,6 +36,7 @@ body {
     height: 90px;
     margin-left: 10px;
 }
+
 .banner {
     width: 90%;
     height: 350px;
@@ -38,11 +62,13 @@ body {
     color: white;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
+
 .part2 {
     background-color: white;
     height: 600px;
     margin: 0 auto;
 }
+
 .part2 img {
     width: 40%;
     height: 400px;
@@ -50,6 +76,7 @@ body {
     margin-left: 20px;
     margin-top: 20px;
 }
+
 .part2 h1 {
     margin-top: 20px;
     width: 70%;
@@ -60,19 +87,61 @@ body {
     text-align: right;
     margin-left: 30%;
 }
+
 .part2 p {
     font-weight: bold;
     text-align: right;
 }
 
 @media screen and (max-width: 768px) {
-    .banner {padding: 0px 20px 20px;}
-    .banner .texto {width: 100%; text-align: center; margin-top: 20px;}
-    .banner h1 {font-size: 18px;}
-    .banner img {width: 100%; height: 300px; margin-top: 20px;float: none;}
-    .part2 {padding: 0px 20px 20px;}
-    .part2 p {width: 100%; text-align: center; margin-top: 20px;}
-    .part2 h1 {font-size: 18px;}
-    .part2 img {width: 100%; height: 300px; margin-top: 20px;float: none;}
-    
+    .link {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+    }
+
+    .banner {
+        padding: 0px 20px 20px;
+    }
+
+    .banner .texto {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .banner h1 {
+        font-size: 18px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        float: none;
+    }
+
+    .part2 {
+        padding: 0px 20px 20px;
+    }
+
+    .part2 p {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .part2 h1 {
+        font-size: 18px;
+    }
+
+    .part2 img {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        float: none;
+    }
+
 }

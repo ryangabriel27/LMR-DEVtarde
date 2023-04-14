@@ -40,4 +40,11 @@ input {
     color: white;
     font-weight: bold;
     border-radius: 5px;
+    font-family: ;
+}
+
+.limpar h1 {
+    color: white;
+    border: 1px;
+    border-color: black;
 }
