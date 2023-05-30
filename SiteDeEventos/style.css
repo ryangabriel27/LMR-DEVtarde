@@ -1,0 +1,109 @@
+/* CSS Carousel */
+body {
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.containerc {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 460px;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+/* Card Header*/
+.card-header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+/* Card Body */
+.card-body {
+    height: 170px;
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.card-local {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card-titulo {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.card-texto {
+    font-size: 12px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+/* Card Footer */
+.card-footer {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #000;
+}
+
+.card-footer a {
+    color: #fff;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+}

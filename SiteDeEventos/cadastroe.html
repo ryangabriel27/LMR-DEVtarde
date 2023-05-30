@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="scriptcadastroe.js"></script>
 </head>
 
 <body>
@@ -16,8 +17,9 @@
         <img src="img/aiaiai.png" alt="" height="70px">
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Eventos</a></li>
+          <li><a href="cadastroe.html" class="nav-link px-2 text-warning">Divulgue o seu!</a></li>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -27,40 +29,41 @@
 
         <div class="text-end">
           <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning" href="cadastro.html">Cadastro</button>
+          <button type="button" class="btn btn-warning">Cadastro</button>
         </div>
       </div>
     </div>
   </header>
-<br>
+  <br>
   <section>
     <div class="container">
-      <div class="row">
-        <h1>Cadastre o seu Evento!!!</h1>
-      </div>
+      <h1>Cadastro de Evento</h1>
       <hr class="featurette-divider">
-      <form action="">
-        <div class="mb-3">
-          <label for="eNome" class="form-label">Nome do Evento</label>
-          <input type="text" class="form-control" id="eNome" placeholder="Ex: Festa do Milho">
+      <form>
+        <div class="form-group">
+          <label for="eNome">Nome do Evento:</label>
+          <input type="text" class="form-control" id="eNome" required>
         </div>
-        <div class="mb-3">
-          <label for="eData" class="form-label">Data do Evento</label>
-          <input type="text" class="form-control" id="eData" placeholder="DD/MM/AAAA">
+        <div class="form-group">
+          <label for="eData">Data do Evento:</label>
+          <input type="date" class="form-control" id="eData" required>
         </div>
-        <div class="mb-3">
-          <label for="eNumero" class="form-label">Numero De Participantes</label>
-          <input type="number" class="form-control" id="eNumero" placeholder="Ex: 100">
+        <div class="form-group">
+          <label for="eLocal">Local do Evento:</label>
+          <input type="text" class="form-control" id="eLocal" required>
         </div>
-        <div class="mb-3">
-          <label for="eNomeP" class="form-label">Nome do Palestrante do Evento</label>
-          <input type="text" class="form-control" id="eNomeP" placeholder="">
+        <div class="form-group">
+          <label for="eDescricao">Descrição do Evento:</label>
+          <textarea class="form-control" id="eDescricao" required></textarea>
         </div>
-        <input type="submit" value="Cadastrar" onclick="cadastroEvento()" style="border-radius: 10px;" class="btn-warning>
+        <br>
+        <button type="button" class="btn btn-warning" onclick="cadastroEvento()">Cadastrar</button>
       </form>
+    </div>
+  </section>
 
 </body>
-<script src="scriptcadastroe.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
