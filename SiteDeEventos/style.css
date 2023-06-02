@@ -1,9 +1,16 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
 /* CSS Carousel */
+
 body {
-    padding-bottom: 3rem;
     color: rgb(var(--bs-tertiary-color-rgb));
 }
 
+a {
+    text-decoration: none;
+}
 
 .carousel {
     margin-bottom: 4rem;
@@ -14,6 +21,10 @@ body {
     z-index: 10;
 }
 
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
 .carousel-item {
     height: 32rem;
 }
@@ -37,73 +48,67 @@ body {
     }
 }
 
-.containerc {
+/* Card Styles */
+
+.card-sl {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-image img {
+    height: 250px;
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    border-radius: 8px 8px 0px 0;
 }
 
-.card {
-    width: 300px;
-    height: 460px;
-    margin: 25px;
-    background-color: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-    transition: 0.3s;
-}
-
-/* Card Header*/
-.card-header {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.card-img {
-    min-width: 100%;
-    width: auto;
-    height: 100%;
-}
-
-/* Card Body */
-.card-body {
-    height: 170px;
+.card-action {
+    position: relative;
+    float: right;
+    margin-top: -25px;
+    margin-right: 20px;
+    z-index: 2;
+    color: #E26D5C;
+    background: #fff;
+    border-radius: 100%;
     padding: 15px;
-    text-align: center;
-    font-family: sans-serif;
+    font-size: 15px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-local {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-.card-titulo {
-    font-size: 32px;
-    margin: 15px 0;
-}
-
-.card-texto {
-    font-size: 12px;
-    width: 250px;
-    margin: 0 auto;
-}
-
-/* Card Footer */
-.card-footer {
-    margin-top: 10px;
-    text-align: center;
-    background-color: #000;
-}
-
-.card-footer a {
+.card-action:hover {
     color: #fff;
-    display: block;
-    padding: 16px;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: 600;
+    background: #E26D5C;
+    -webkit-animation: pulse 1.5s infinite;
 }
+
+.card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    background: #fff;
+    padding: 10px 15px;
+}
+
+.card-text {
+    padding: 10px 15px;
+    background: #fff;
+    font-size: 14px;
+    color: #000000;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #FFC107;
+    color: #000000;
+    border-radius: 0 0 8px 8px;
+}
+
+.card-button:hover {
+    text-decoration: none;
+    background-color: #ca9905;
+    color: #000000;
+
+}
+

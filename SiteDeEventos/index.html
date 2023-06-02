@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en">
 
 <head>
   <script src="../assets/js/color-modes.js"></script>
@@ -18,8 +18,8 @@
         <img src="img/aiaiai.png" alt="" height="70px">
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Eventos</a></li>
+          <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="eventos.html" class="nav-link px-2 text-white">Eventos</a></li>
           <li><a href="cadastroe.html" class="nav-link px-2 text-warning">Divulgue o seu!</a></li>
         </ul>
 
@@ -29,8 +29,8 @@
         </form>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Cadastro</button>
+          <a class="btn btn-outline-light me-2" href="login.html" role="button">Login</a>
+          <a class="btn btn-warning" href="cadastro.html" role="button">Cadastro</a>
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/495782157230350.jpg" alt="" width="100%">
+          <img src="img/495782157230350.jpg" alt="">
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Divulgue o seu evento!</h1>
@@ -58,28 +58,21 @@
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
+          <img src="https://www.guiasp24h.com.br/wp-content/uploads/2021/11/The-Town-capa-1000x700.jpg" alt="">
           <div class="container">
-            <div class="carousel-caption">
-              <h1>EVENTO</h1>
-              <p>Some representative placeholder content for the second slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-warning" href="evento1">Ver evento</a></p>
+            <div class="carousel-caption text-start">
+              <button class="btn btn-lg btn-outline-warning" href="evento1">Ver evento</button>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
+          <img
+            src="https://malucellidotlive.files.wordpress.com/2017/09/27-09_curitiba-gl-show-banner.jpg"
+            alt="">
           <div class="container">
-            <div class="carousel-caption text-end">
-              <h1>EVENTO</h1>
-              <p>Some representative placeholder content for the third slide of this carousel.</p>
-              <p><a class="btn btn-lg btn-warning" href="evento2">Ver evento</a></p>
+            <div class="carousel-caption text-start">
+              <h1></h1>
+              <button class="btn btn-lg btn-outline-warning" href="evento2">Ver evento</button>
             </div>
           </div>
         </div>
@@ -96,90 +89,146 @@
   </section>
 
   <section>
-    <div class="containerc">
+    <div class="container">
+      <h3 style="font-weight: bold;">AQUI ESTÃO ALGUNS EVENTOS PRÓXIMOS :</h3><button type="button"
+        class="btn btn-warning"> Veja mais
+        aqui!</button>
+      <br>
+      <br>
+      <div class="row justify-content-space-evenly">
+        <!-- Card1 -->
+        <div class="col-md-4">
+          <div class="card-sl">
+            <div class="card-image">
+              <img src="img/Evento01.jpg" />
+            </div>
+            <div class="card-heading">
+              EVENTO 1
+            </div>
+            <div class="card-text">
+              [...] Descrição do evento [...]
+            </div>
+            <div class="card-text">
+              Local do evento | Data do Evento
+            </div>
+            <a href="#" class="card-button"> Ver mais</a>
+          </div>
+        </div>
+        <!-- Card2 -->
+        <div class="col-md-4">
+          <div class="card-sl">
+            <div class="card-image">
+              <img src="https://akamai.sscdn.co/letras/250x250/fotos/e/8/f/c/e8fcecc542a9599728c1792ee0a056b0.jpg" />
+            </div>
+            <div class="card-heading">
+              EVENTO 2
+            </div>
+            <div class="card-text">
+              [...] Descrição do evento [...]
+            </div>
+            <div class="card-text">
+              Local do evento | Data do Evento
+            </div>
+            <a href="#" class="card-button"> Ver mais</a>
+          </div>
+        </div>
+        <!-- Card3 -->
+        <div class="col-md-4">
+          <div class="card-sl">
+            <div class="card-image">
+              <img src="img/evento03.jpg" />
+            </div>
+            <div class="card-heading">
+              EVENTO 3
+            </div>
+            <div class="card-text">
+              [...] Descrição do evento [...]
+            </div>
+            <div class="card-text">
+              Local do evento | Data do Evento
+            </div>
+            <a href="#" class="card-button"> Ver mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
 
-      <div class="card card-1">
-        <div class="card-header">
-          <img
-            src="https://images.unsplash.com/photo-1514565131-fce0801e5785?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640"
-            class="card-img" />
-        </div>
-        <div class="card-body">
-          <h3 class="card-local">Cidade - Estado </h3>
-          <h2 class="card-titulo">Evento 1</h2>
-          <p class="card-texto">
-            [...] Descrição do evento [...]
-          </p>
-        </div>
-        <div class="card-footer">
-          <a href="evento1.html">Ver Mais</a>
+  <section class="text-white text-center text-bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="my-md-5 py-5">
+            <h1 style="font-weight: bold; font-family: sans-serif;">NÃO PERCA ESSA OPORTUNIDADE</h1>
+            <br>
+            <button type="button" class="btn btn-outline-warning" style="width: 200px;">Crie sua conta</button>
+          </div>
         </div>
       </div>
-      <div class="card card-2">
-        <div class="card-header">
-          <img
-            src="https://images.pexels.com/photos/612419/pexels-photo-612419.jpeg?cs=srgb&fit=crop&fm=jpg&h=426&w=640"
-            class="card-img" />
-        </div>
-        <div class="card-body">
-          <h3 class="card-local">Cidade - Estado</h3>
-          <h2 class="card-titulo">Evento 2</h2>
-          <p class="card-texto">
-            [...] Descrição do evento [...]
-          </p>
-        </div>
-        <div class="card-footer">
-          <a href="evento2.html">Ver Mais</a>
-        </div>
-      </div>
-      <div class="card card-3">
-        <div class="card-header">
-          <img
-            src="https://images.unsplash.com/photo-1541264161754-445bbdd7de52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640"
-            class="card-img" />
-        </div>
-        <div class="card-body">
-          <h3 class="card-local">Cidade - Estado</h3>
-          <h2 class="card-titulo">Evento 3</h2>
-          <p class="card-texto">
-            [...] Descrição do evento [...]
-          </p>
-        </div>
-        <div class="card-footer">
-          <a href="evento3.html">Ver Mais</a>
-        </div>
-      </div>
-
     </div>
   </section>
   <hr class="featurette-divider">
-
-
-
-
-  <hr class="featurette-divider">
-  </div>
-  <div class="container">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Eventos</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-      </ul>
-      <p class="text-center text-body-secondary">© 2023 GR Eventos, Inc</p>
+  <section>
+    <div class="container">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Sobre Nós
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Nossos Parceiros
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+              filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Contato
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+              happening here in terms of content, but just filling up the space to make it look, at least at first
+              glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section>
+    <footer class="text-center text-white" style="background-color: #212529;">
+      <div class="container p-4"></div>
+      <div class="text-center p-3" style="background-color: #212529;">
+        © 2023 Ryan Gabriel | GR Eventos
+      </div>
     </footer>
-  </div>
-
-
-
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-
-
+  </section>
 </body>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 
 </html>
