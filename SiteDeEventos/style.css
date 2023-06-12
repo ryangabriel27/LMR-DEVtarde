@@ -1,11 +1,12 @@
 * {
-    font-family: "Poppins", sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* CSS Carousel */
 
 body {
     color: rgb(var(--bs-tertiary-color-rgb));
+    margin: 0;
 }
 
 a {
@@ -78,7 +79,6 @@ a {
 .card-action:hover {
     color: #fff;
     background: #E26D5C;
-    -webkit-animation: pulse 1.5s infinite;
 }
 
 .card-heading {
@@ -111,4 +111,3 @@ a {
     color: #000000;
 
 }
-
