@@ -48,12 +48,19 @@
     color: #000000;
 }
 
-.cards {
-
+.card-button {
     display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #FFC107;
+    color: #000000;
+    border-radius: 0 0 8px 8px;
 }
 
-.row {
-    justify-content: space-evenly;
-    align-items: center;
+.card-button:hover {
+    text-decoration: none;
+    background-color: #ca9905;
+    color: #000000;
+
 }

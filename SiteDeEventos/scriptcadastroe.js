@@ -18,7 +18,10 @@ function cadastroEvento() {
         return;
     }
     
-    alert(nomeEvento+" "+dataEvento+" "+descricaoEvento+" "+localEvento);
+    alert("Nome do evento: "+nomeEvento
+    +"\nData do evento: "+dataEvento
+    +"\nDescrição do evento: "+descricaoEvento
+    +"\nLocal do evento: "+localEvento);
     document.getElementById("eNome").value = "";
     document.getElementById("eData").value = "";
     document.getElementById("eDescricao").value = "";
