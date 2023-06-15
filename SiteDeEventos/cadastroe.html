@@ -15,19 +15,15 @@
   <header class="p-3 text-bg-dark">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <img src="img/aiaiai.png" alt="" height="70px">
+        <div class="logo" style="height: 70px;background: url(img/aiaiai.png) center/cover;width: 200px;">
+        </div>
+        
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
           <li><a href="eventos.html" class="nav-link px-2 text-white">Eventos</a></li>
           <li><a href="cadastroe.html" class="nav-link px-2 text-warning">Divulgue o seu!</a></li>
         </ul>
-
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
-            aria-label="Search">
-        </form>
-
         <div class="text-end">
           <a class="btn btn-outline-light me-2" href="login.html" role="button">Login</a>
           <a class="btn btn-warning" href="cadastro.html" role="button">Cadastro</a>
@@ -36,43 +32,60 @@
     </div>
   </header>
   <br>
-  <section>
+
+  <section class="text-center">
     <div class="container">
       <h1>Cadastro de Evento</h1>
       <hr class="featurette-divider">
-      <form>
-        <div class="form-group">
-          <label for="eNome">Nome do Evento:</label>
-          <input type="text" class="form-control" id="eNome" required>
+      <div class="cadastroEvento text-start">
+        <form id="cEvento">
+          <div class="form-group">
+            <label for="eNome">Nome do Evento:</label>
+            <input type="text" class="form-control" id="eNome" required>
+          </div>
+          <div class="form-group">
+            <label for="eData">Data do Evento:</label>
+            <input type="date" class="form-control" id="eData" required>
+          </div>
+          <div class="form-group">
+            <label for="eLocal">Local do Evento:</label>
+            <input type="text" class="form-control" id="eLocal" required>
+          </div>
+          <div class="form-group">
+            <label for="eDescricao">Descrição do Evento:</label>
+            <textarea class="form-control" id="eDescricao" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="fotoDoEvento">Escolha uma foto para o evento:</label>
+            <input type="file" id="fotoDoEvento" onchange="previewImg()" name="fotoDoEvento"
+              accept="image/png, image/jpeg">
+            <img src="" height="200">
+          </div>
+          <br>
+        </form>
+        <div class="container">
+          <div class="row">
+            <button type="button" class="btn btn-warning" onclick="cadastroEvento()">Cadastrar</button>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="eData">Data do Evento:</label>
-          <input type="date" class="form-control" id="eData" required>
-        </div>
-        <div class="form-group">
-          <label for="eLocal">Local do Evento:</label>
-          <input type="text" class="form-control" id="eLocal" required>
-        </div>
-        <div class="form-group">
-          <label for="eDescricao">Descrição do Evento:</label>
-          <textarea class="form-control" id="eDescricao" required></textarea>
-        </div>
-        <br>
-        <button type="button" class="btn btn-warning" onclick="cadastroEvento()">Cadastrar</button>
-      </form>
+      </div>
     </div>
   </section>
 
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-      </ul>
-      <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
-    </footer>
+  <div class="eventoCadastrado">
+    
+  </div>
+
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+  </footer>
 
 </body>
 
