@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,25 +10,62 @@
 </head>
 
 <body>
-    <header class="p-3 text-bg-dark">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <img src="img/aiaiai.png" alt="" height="70px">
+    <section class="vh-100">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-sm-4 text-bg-dark vh-100" style="display: flex;align-items: center;">
+                    <!-- Logo -->
+                    <div class="px-5 ms-xl-4" style="display: flex; justify-content: center;flex-direction: column;align-items: center;">
+                        <img src="img/aiaiai.png" alt="">
+                        <div class="d-grid gap-2" style="margin-top: 10px;">
+                            <a class="btn btn-outline-warning btn-rounded" href="index.html" role="button">Volte
+                                para página principal</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Background -->
+                <div class="col-sm-8 px-0 d-none d-sm-block">
+                    <!-- Form -->
+                    <div
+                        class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5 justify-content-center">
 
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="eventos.html" class="nav-link px-2 text-white">Eventos</a></li>
-                    <li><a href="cadastroe.html" class="nav-link px-2 text-warning">Divulgue o seu!</a></li>
-                </ul>
-                <div class="text-end">
-                    <a class="btn btn-outline-light me-2" href="login.html" role="button">Login</a>
-                    <a class="btn btn-warning" href="cadastro.html" role="button">Cadastro</a>
+                        <form style="width: 23rem;">
+                            <h1 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Crie uma conta</h1>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="LEmail">Nome do usuário</label>
+                                <input type="email" id="LEmail" class="form-control form-control-lg" />
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="LEmail">Endereço de E-Mail</label>
+                                <input type="email" id="LEmail" class="form-control form-control-lg" />
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="LSenha">Senha</label>
+                                <input type="password" id="LSenha" class="form-control form-control-lg" />
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="LSenha">Confirmar senha</label>
+                                <input type="password" id="LSenha" class="form-control form-control-lg" />
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-warning" type="button">Cadastrar</button>
+                            </div>
+
+                            <br>
+                            <p>Já tem uma conta? <a href="login.html" class="link-info text-warning" style="text-decoration: none;"> Então faça seu Login aqui</a></p>
+                            <br>
+                            
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    
+    </section>
 </body>
 
 </html>
