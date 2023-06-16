@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="scriptCadastro.js"></script>
 </head>
 
 <body>
@@ -32,27 +33,27 @@
                         <form style="width: 23rem;">
                             <h1 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Crie uma conta</h1>
                             <div class="form-outline mb-4">
-                                <label class="form-label" for="LEmail">Nome do usuário</label>
-                                <input type="email" id="LEmail" class="form-control form-control-lg" />
+                                <label class="form-label" for="CNome">Nome do usuário</label>
+                                <input type="email" id="CNome" class="form-control form-control-lg" />
                             </div>
 
                             <div class="form-outline mb-4">
-                                <label class="form-label" for="LEmail">Endereço de E-Mail</label>
-                                <input type="email" id="LEmail" class="form-control form-control-lg" />
+                                <label class="form-label" for="CEmail">Endereço de E-Mail</label>
+                                <input type="email" id="CEmail" class="form-control form-control-lg" />
                             </div>
 
                             <div class="form-outline mb-4">
-                                <label class="form-label" for="LSenha">Senha</label>
-                                <input type="password" id="LSenha" class="form-control form-control-lg" />
+                                <label class="form-label" for="CSenha">Senha</label>
+                                <input type="password" id="CSenha" class="form-control form-control-lg" />
                             </div>
 
                             <div class="form-outline mb-4">
-                                <label class="form-label" for="LSenha">Confirmar senha</label>
-                                <input type="password" id="LSenha" class="form-control form-control-lg" />
+                                <label class="form-label" for="CconfirmarSenha">Confirmar senha</label>
+                                <input type="password" id="CconfirmarSenha" class="form-control form-control-lg" />
                             </div>
 
                             <div class="d-grid gap-2">
-                                <button class="btn btn-warning" type="button">Cadastrar</button>
+                                <button class="btn btn-warning" type="button" onclick="cadastro()">Cadastrar</button>
                             </div>
 
                             <br>
