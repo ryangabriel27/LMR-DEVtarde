@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Noto+Sans:wght@500&display=swap');
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: #264027;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu1 {
+    margin-right: 50px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.linkMenu {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    width: 1.5vw;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.hb {
+    display: none;
+}
+
+.menuHB {
+    display: none;
+}
+
+/* carousel */
+
+.carousel-inner {
+    height: 70vh;
+}
+
+.carousel-inner img {
+    height: 100%;
+}
+
+
+/* 
+ */
+
+.textoMenu {
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+    .menu1 {
+        display: none;
+    }
+
+    .hb {
+        display: inline;
+        float: left;
+        height: 10vh;
+        width: 60px;
+    }
+    .hb:hover ~ .menuHB{
+        display: block;
+        list-style: a;
+    }
+}
