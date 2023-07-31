@@ -3,6 +3,7 @@
 
 body {
     margin: 0;
+    background-color: #edede9;
 }
 
 header {
@@ -60,6 +61,26 @@ header {
     font-size: 50px;
 }
 
+/* 
+ */
+
+.card-body {
+    background-color: #edede9;
+}
+.card-title {
+    font-family: 'Kanit', sans-serif;
+}
+
+.card-text {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* 
+ */
+
+.formulario {
+    align-items: center;
+}
 @media only screen and (max-width: 900px) {
     .menu1 {
         display: none;
