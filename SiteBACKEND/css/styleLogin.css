@@ -42,66 +42,50 @@ header {
     display: none;
 }
 
-/* carousel */
+/*  ====================================== */
 
-.carousel-inner {
+.login {
     height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 
-.carousel-inner img {
-    height: 100%;
+.menuLogin {
+    background-color: antiquewhite;
+    padding: 50px 300px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.titleLogin {
+    align-items: center;
+}
+.bodyLogin {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 
-/* 
- */
-
-.textoMenu {
-    font-family: 'Kanit', sans-serif;
-    font-size: 50px;
+.rightLogin {
+    margin: 0;
+    width: 50%;
+    float: right;
 }
 
-/* 
- */
-
-.card-body {
-    background-color: #edede9;
+.rightLogin img {
+    width: 100%;
 }
-.card-title {
-    font-family: 'Kanit', sans-serif;
-}
-
-.card-text {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-/* 
- */
-
-.formulario {
+.leftLogin {
+    width: 50%;
+    display: flex;
     align-items: center;
 }
 
-/* 
- */
+/* ======================================= */
 
-.container-fluid img {
-    position: center;
-    size: cover;
-}
-@media only screen and (max-width: 900px) {
-    .menu1 {
-        display: none;
-    }
 
-    .hb {
-        display: inline;
-        float: left;
-        height: 10vh;
-        width: 60px;
-    }
-    .hb:hover ~ .menuHB{
-        display: block;
-        list-style: a;
-    }
-}
+
