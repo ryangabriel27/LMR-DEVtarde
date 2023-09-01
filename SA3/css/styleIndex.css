@@ -16,7 +16,9 @@ a {
     background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 8vh;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.203);
     border-radius: 8px;
 }
@@ -25,7 +27,9 @@ a {
     background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 8vh;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.142);
     border-radius: 8px;
 }
@@ -34,19 +38,24 @@ a {
     background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 8vh;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.142);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .piano:hover {
     background-color: rgba(213, 213, 213, 0.678);
+    transition: 0.3s;
 }
 
 .cronometro:hover {
     background-color: rgba(213, 213, 213, 0.678);
+    transition: 0.3s;
 }
 
-.jogoDavelha:hover {
+.jogoDaVelha:hover {
     background-color: rgba(213, 213, 213, 0.678);
+    transition: 0.3s;
 }
