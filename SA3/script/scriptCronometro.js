@@ -20,7 +20,7 @@ document.cronometro.reset.onclick = () => reset();
 function start() {
     // alert('iniciado');
     pause();
-    cron = setInterval(() => { timer(); }, 10);
+    cron = setInterval(cronometro, 10);
 }
 
 function pause() {
@@ -35,12 +35,12 @@ function reset() {
     segundos = 0;
     milisegundos = 0;
     document.getElementById('horas').innerText = '00';
-    document.getElementById('segundos').innerText = '00';
     document.getElementById('minutos').innerText = '00';
-    document.getElementById('milisegundos').innerText = '00';
+    document.getElementById('segundos').innerText = '00';
+    document.getElementById('milisegundos').innerText = '000';
 }
 
-function timer() {
+function cronometro() {
     if ((milisegundos += 10) == 1000) {
         milisegundos = 0;
         segundos++;
@@ -53,12 +53,13 @@ function timer() {
     }
 
     document.getElementById('horas').innerText = returnData(horas);
-    document.getElementById('segundos').innerText = returnData(minutos);
-    document.getElementById('minutos').innerText = returnData(segundos);
+    document.getElementById('minutos').innerText = returnData(minutos);
+    document.getElementById('segundos').innerText = returnData(segundos);
     document.getElementById('milisegundos').innerText = returnData(milisegundos);
 }
 
 function returnData(input) {
+    // Concatena 0 a nºs < 10
     return input >= 10 ? input : `0${input}`;
 }
 

@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(215, 213, 213);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.row {
+    margin-top: 20em;
+    justify-content: center;
+}
+
+.piano {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.203);
+    border-radius: 8px;
+}
+
+.cronometro {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.142);
+    border-radius: 8px;
+}
+
+.jogoDaVelha {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.142);
+    border-radius: 8px;
+}
+
+.piano:hover {
+    background-color: rgba(213, 213, 213, 0.678);
+}
+
+.cronometro:hover {
+    background-color: rgba(213, 213, 213, 0.678);
+}
+
+.jogoDavelha:hover {
+    background-color: rgba(213, 213, 213, 0.678);
+}

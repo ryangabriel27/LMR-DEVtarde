@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body{
+    margin: 0;
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+}
+
+
+.main {
+    margin-top: 30vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cron {
+    width: 450px;
+    padding: 10px 10px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.142);
+}
+
+.temporizador{
+    width: 100vw;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    width: 30%;
+    height: 5vh;
+    border-radius: 8px;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+#start{
+    background-color: rgb(41, 147, 41);
+    color: white;
+    position: static;
+}
+
+#reset{
+    background-color: rgb(177, 73, 73);
+    color: white;
+    position: static;
+}
+
+#pause {
+    position: static;
+}
+
+@media screen and (max-width:768px) {
+    .cron {
+        width: 250px;
+    }
+    .temporizador{
+        font-size: 2.3em;
+    }
+    button {
+        height: 3.5vh;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .cron {
+        width: 150px;
+    }
+    .temporizador{
+        font-size: 1.4em;
+    }
+    button {
+        height: 1.25vh;
+        font-size: 5px;
+    }
+}
