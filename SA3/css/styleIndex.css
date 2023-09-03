@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 body {
     background-color: rgb(215, 213, 213);
 }
@@ -7,16 +9,37 @@ a {
     color: black;
 }
 
+header {
+    background-color: rgb(54, 51, 51);
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-item:hover{
+    color: rgb(173, 173, 173);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+
+
 .row {
     margin-top: 20em;
     justify-content: center;
 }
 
 .piano {
+    font-size: 1.5em;
     background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:end;
     width: 100%;
     height: 8vh;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.203);
@@ -24,10 +47,11 @@ a {
 }
 
 .cronometro {
+    font-size: 1.5em;
     background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     width: 100%;
     height: 8vh;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.142);
@@ -35,10 +59,11 @@ a {
 }
 
 .jogoDaVelha {
+    font-size: 1.5em;
     background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     width: 100%;
     height: 8vh;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.142);
@@ -46,16 +71,16 @@ a {
 }
 
 .piano:hover {
-    background-color: rgba(213, 213, 213, 0.678);
+    background-color: rgba(241, 196, 97, 0.678);
     transition: 0.3s;
 }
 
 .cronometro:hover {
-    background-color: rgba(213, 213, 213, 0.678);
+    background-color: rgba(119, 250, 152, 0.678);
     transition: 0.3s;
 }
 
 .jogoDaVelha:hover {
-    background-color: rgba(213, 213, 213, 0.678);
+    background-color: rgba(246, 152, 255, 0.678);
     transition: 0.3s;
 }
