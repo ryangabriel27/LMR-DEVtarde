@@ -50,7 +50,7 @@ function mostrarOnda () {
 }
 
 <!-- Cronômetro JavaScript -->
-Relatório Situação de aprendizagem 2 - Cronômetro
+RELATÓRIO SITUAÇÃO DE APRENDIZAGEM 2 - Cronômetro
 
 Em resumo , o projeto consiste em um Cronômetro simples em que podemos ver horas,minutos,segundo e milissegundos.
 Para fazer esse cronômetro foi necessário utilizar HTML, CSS e , principalmente , JavaScript. Na página html é bem simples há um formulario com 3 botões ("Start","Pause","Reset") e os campos numéricos (Horas,Minutos,Segundos e Milissegundos) com a página Html feita , vamos ao JavaScript que basicamente é o maior responsavél pelo funcionamento do projeto.
