@@ -1,4 +1,4 @@
-## PIANO JavaScript
+# PIANO JavaScript
 
 O piano, dado inicialmente na dificuldade fácil, é um 'projeto simples" que estimula a lógica de programação e introduz conceitos básicos da linguagem JavaScript de uma forma interativa e que ainda lhe permite desbravar eventos, funções e manipulação de variáveis. Apesar de "simples" é um ótimo programa para se testar.
 
@@ -49,7 +49,7 @@ function mostrarOnda () {
     //função para fazer ondas sonoras aparecerem - ela funciona, mas nao consigo um video bom :)
 }
 
-## Cronômetro - JavaScript
+# Cronômetro - JavaScript
 RELATÓRIO SITUAÇÃO DE APRENDIZAGEM 2 - Cronômetro
 
 Em resumo , o projeto consiste em um Cronômetro simples em que podemos ver horas,minutos,segundo e milissegundos.
@@ -59,7 +59,7 @@ No todo há 5 funções: "start()","pause()","reset()","cronometro()","returnDat
 Com esse projeto aprendi muito mais sobre JavaScript e quanta coisa da pra se fazer com ele, por meio de pesquisas fui descobrindo cada vez mais seu potencial.
 
 
-## Jogo Da Velha - JavaScript
+# Jogo Da Velha - JavaScript
 RELATÓRIO JOGO DA VELHA - HTML, CSS, JS
 
 O jogo da velha é um jogo clássico de tabuleiro que envolve dois jogadores, geralmente identificados como X e O, que se alternam para preencher um tabuleiro 3x3 com seus respectivos símbolos. O jogo continua até que um jogador vença ou ocorra um empate. Vamos analisar as principais funções do código fornecido:
