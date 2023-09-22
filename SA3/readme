@@ -1,4 +1,4 @@
-#PIANO JavaScript
+## PIANO JavaScript
 
 O piano, dado inicialmente na dificuldade fácil, é um 'projeto simples" que estimula a lógica de programação e introduz conceitos básicos da linguagem JavaScript de uma forma interativa e que ainda lhe permite desbravar eventos, funções e manipulação de variáveis. Apesar de "simples" é um ótimo programa para se testar.
 
@@ -49,17 +49,17 @@ function mostrarOnda () {
     //função para fazer ondas sonoras aparecerem - ela funciona, mas nao consigo um video bom :)
 }
 
-<!-- Cronômetro JavaScript -->
+## Cronômetro - JavaScript
 RELATÓRIO SITUAÇÃO DE APRENDIZAGEM 2 - Cronômetro
 
 Em resumo , o projeto consiste em um Cronômetro simples em que podemos ver horas,minutos,segundo e milissegundos.
 Para fazer esse cronômetro foi necessário utilizar HTML, CSS e , principalmente , JavaScript. Na página html é bem simples há um formulario com 3 botões ("Start","Pause","Reset") e os campos numéricos (Horas,Minutos,Segundos e Milissegundos) com a página Html feita , vamos ao JavaScript que basicamente é o maior responsavél pelo funcionamento do projeto.
 No javaScript foram criadas 5 variaveis (let) : horas, minutos , segundos, milissegundos e "cron"; Junto das variaveis também adicionamos Ações aos botões presente no formulario ("Start","Pause","Reset") para que assim que clicados eles executem uma função.
-No todo há 5 funções: "start()","pause()","reset()","cronometro()","returnData()". A função "start()" é executada assim que clicamos no botão Start , nela colocamos um intervalo de 10 milissegundos para o inicio do nosso cronômetro e executamos a função "cronometro()". Na função "pause()" ,que é executada pelo botão Pause, paramos o cronômetro tirando aquele intervalo q foi colocado na função "start()". Na função "reset()" , que é executada assim que clicamos no botão reset, redefinimos o cronômetro voltando todos os campos para valor 0. A função "cronometro()" é a que da vida ao nosso cronômetro , nela há o sistema de conversão de milissegundos para segundos de segundos para minutos e minutos para horas e assim diante.Por fim, temos a função "returnData()" que deixa o projeto mais dinâmico basicamente ela faz com que se um número for menor que 10 então concatena com um 0 a frente (ex: 01 , 09);
+No todo há 5 funções: "start()","pause()","reset()","cronometro()","returnData()". A função "start()" é executada assim que clicamos no botão Iniciar , nela utilizamos uma função já existente do javaScript , setInterval() , para colocarmos um intervalo de tempo (10 milissegundos) para que assim o cronômetro tenha um início e junto desse intervalo também executamos a função "cronometro()". Na função "pause()" ,que é executada pelo botão Pause, paramos o cronômetro tirando aquele intervalo q foi colocado na função "start()". Na função "reset()" , que é executada assim que clicamos no botão Resetar, redefinimos o cronômetro voltando todos os campos para valor 0. A função "cronometro()" é a que da vida ao nosso cronômetro , nela há o sistema de conversão de milissegundos para segundos de segundos para minutos e minutos para horas e assim diante.Por fim, temos a função "returnData()" que deixa o projeto mais dinâmico basicamente ela faz com que se um número for menor que 10 então concatena com um 0 a frente (ex: 01 , 09);
 Com esse projeto aprendi muito mais sobre JavaScript e quanta coisa da pra se fazer com ele, por meio de pesquisas fui descobrindo cada vez mais seu potencial.
 
 
-<!-- Cronômetro Jogo Da Velha JavaScript -->
+## Jogo Da Velha - JavaScript
 RELATÓRIO JOGO DA VELHA - HTML, CSS, JS
 
 O jogo da velha é um jogo clássico de tabuleiro que envolve dois jogadores, geralmente identificados como X e O, que se alternam para preencher um tabuleiro 3x3 com seus respectivos símbolos. O jogo continua até que um jogador vença ou ocorra um empate. Vamos analisar as principais funções do código fornecido:
