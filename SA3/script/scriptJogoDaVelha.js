@@ -1,7 +1,7 @@
-// Function called whenever user tab on any box
+// Função chamada sempre que o usuário clica em qualquer quadrado
 function myfunc() {
  
-    // Setting DOM to all boxes or input field
+    //  Configurando as posições dos botões
     var b1, b1, b3, b4, b5, b6, b7, b8, b9;
     b1 = document.getElementById("b1").value;
     b2 = document.getElementById("b2").value;
@@ -13,8 +13,8 @@ function myfunc() {
     b8 = document.getElementById("b8").value;
     b9 = document.getElementById("b9").value;
  
-    // Checking if Player X won or not and after
-    // that disabled all the other fields
+    // Verificando se o Jogador X venceu ou não e, em seguida, desabilitando todos os outros campos
+    // Verificar todas as possíveis combinações vencedoras para o Jogador X
     if ((b1 == 'x' || b1 == 'X') && (b2 == 'x' ||
         b2 == 'X') && (b3 == 'x' || b3 == 'X')) {
         document.getElementById('print')
@@ -112,10 +112,10 @@ function myfunc() {
         document.getElementById("b9").disabled = true;
         window.alert('JOGADOR X GANHOU');
     }
- 
-    // Checking of Player X finsh
-    // Checking for Player 0 starts, Is player 0 won or
-    // not and after that disabled all the other fields
+    // Fim da Verificação do Jogador X
+
+    // Verificando se o Jogador O venceu ou não e, em seguida, desabilitando todos os outros campos
+    // Verificar todas as possíveis combinações vencedoras para o Jogador O
     else if ((b1 == 'O' || b1 == 'O') && (b2 == 'O' ||
         b2 == 'O') && (b3 == 'O' || b3 == 'O')) {
         document.getElementById('print')
@@ -213,8 +213,9 @@ function myfunc() {
         window.alert('JOGADOR O GANHOU');
     }
  
-    // Checking of Player 0 finsh
-    // Here, Checking about Tie
+    // Fim da verificação do jogador O
+
+    // Verificando empate (todos os quadrados preenchidos com X ou O)
     else if ((b1 == 'X' || b1 == 'O') && (b2 == 'X'
         || b2 == 'O') && (b3 == 'X' || b3 == 'O') &&
         (b4 == 'X' || b4 == 'O') && (b5 == 'X' ||
@@ -226,8 +227,8 @@ function myfunc() {
             window.alert('EMPATE');
     }
     else {
- 
-        // Here, Printing Result
+        // Se ninguém ganhou e não houve empate, continue o jogo
+        // Exibir de quem é a vez (Jogador X ou Jogador O)
         if (flag == 1) {
             document.getElementById('print')
                 .innerHTML = "vez do jogador X";
@@ -239,9 +240,11 @@ function myfunc() {
     }
 }
  
-// Function to reset game
+// Função para redefinir o jogo
 function myfunc_2() {
+    // Recarregar a página para redefinir o jogo
     location.reload();
+    // Redefinir os valores e habilitar todos os quadrados
     document.getElementById('b1').value = '';
     document.getElementById("b2").value = '';
     document.getElementById("b3").value = '';
@@ -253,9 +256,9 @@ function myfunc_2() {
     document.getElementById("b9").value = '';
  
 }
- 
-// Here onwards, functions check turn of the player
-// and put accordingly value X or O
+
+// Funções para lidar com cada clique em um quadrado e alternar entre Jogador X e Jogador O
+// Repetir essas funções para cada quadrado (minhaFuncao_3, minhaFuncao_4, ..., minhaFuncao_11)
 flag = 1;
 function myfunc_3() {
     if (flag == 1) {

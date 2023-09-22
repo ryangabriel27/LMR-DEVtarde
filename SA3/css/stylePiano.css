@@ -47,6 +47,7 @@
   
   .cabecalho .seta {
       width: 1%;
+      margin-left: 1em;
   }
   
 
@@ -188,7 +189,7 @@ box-shadow: 0 6px 0 grey;
  }
 
 #btn0:hover,#btn1:hover,#btn2:hover,#btn3:hover,#btn4:hover,#btn5:hover,#btn6:hover,#btn7:hover,#btn8:hover,#btn9:hover,#btn10:hover,
-#bt11:hover,#btn12:hover,#btn13:hover,#btn14:hover{background-color: white;
+#btn11:hover,#btn12:hover,#btn13:hover,#btn14:hover{background-color: white;
 border: 0;
 border-radius: 6px;
 box-shadow: 0 6px 0 grey;
