@@ -16,6 +16,7 @@
 
 <body>
 
+    <!-- Header bootstrap -->
     <div class="cabecalho">
         <header>
             <a href="index.html" class="seta">
@@ -33,10 +34,7 @@
 
 
 
-
-
-
-
+    <!-- Container do piano -->
     <div class="container-main">
         <header class="header">
             <p class="tittle"><i class="fa-brands fa-js fa-2xl"></i></p>
@@ -47,46 +45,95 @@
             </div>
         </header>
         <div class="container1">
-            <button id="btn0"></button>
-            <button id="btn1"></button>
-            <button id="btn2"></button>
-            <button id="btn3"></button>
-            <button id="btn4"></button>
-            <button id="btn5"></button>
-            <button id="btn6"></button>
-            <button id="btn7"></button>
-            <button id="btn8"></button>
-            <button id="btn9"></button>
-            <button id="btn10"></button>
-            <button id="btn11"></button>
-            <button id="btn12"></button>
-            <button id="btn13"></button>
-            <button id="btn14"></button>
+            <button id="btn0" class="piano-key"></button>
+            <button id="btn1" class="piano-key"></button>
+            <button id="btn2" class="piano-key"></button>
+            <button id="btn3" class="piano-key"></button>
+            <button id="btn4" class="piano-key"></button>
+            <button id="btn5" class="piano-key"></button>
+            <button id="btn6" class="piano-key"></button>
+            <button id="btn7" class="piano-key"></button>
+            <button id="btn8" class="piano-key"></button>
+            <button id="btn9" class="piano-key"></button>
+            <button id="btn10" class="piano-key"></button>
+            <button id="btn11" class="piano-key"></button>
+            <button id="btn12" class="piano-key"></button>
+            <button id="btn13" class="piano-key"></button>
+            <button id="btn14" class="piano-key"></button>
         </div>
 
 
         <div class="container">
             <br><br>
-            <button id="btn15"></button>
-            <button id="btn16"></button>
-            <button id="btn17"></button>
-            <button id="btn18"></button>
-            <button id="btn19"></button>
-            <button id="btn20"></button>
-            <button id="btn21"></button>
-            <button id="btn22"></button>
-            <button id="btn23"></button>
-            <button id="btn24"></button>
-            <button id="btn25"></button>
-            <button id="btn26"></button>
-            <button id="btn27"></button>
-            <button id="btn28"></button>
-            <button id="btn29"></button>
-            <button id="btn30"></button>
+            <button id="btn15" class="piano-key"></button>
+            <button id="btn16" class="piano-key"></button>
+            <button id="btn17" class="piano-key"></button>
+            <button id="btn18" class="piano-key"></button>
+            <button id="btn19" class="piano-key"></button>
+            <button id="btn20" class="piano-key"></button>
+            <button id="btn21" class="piano-key"></button>
+            <button id="btn22" class="piano-key"></button>
+            <button id="btn23" class="piano-key"></button>
+            <button id="btn24" class="piano-key"></button>
+            <button id="btn25" class="piano-key"></button>
+            <button id="btn26" class="piano-key"></button>
+            <button id="btn27" class="piano-key"></button>
+            <button id="btn28" class="piano-key"></button>
+            <button id="btn29" class="piano-key"></button>
+            <button id="btn30" class="piano-key"></button>
 
         </div>
     </div>
 
+    <div class="barraControles">
+        <div class="capad" style="display: flex;">
+            <img src="img/cd-cover-2978944_1280.jpg" alt="" class="capad">
+            <p class="tituloMusica">Liebestraum - </p>
+            <div class="heart"><i class="fa-regular fa-heart" style="color: #808080;"></i></div>
+
+
+        </div>
+        <div class="controleCentro" style="display: flex;">
+
+            <div class="controlesMain">
+                <button style="background-color: transparent; color: white; border: none; cursor: pointer;"><i
+                        class="fa-solid fa-repeat" style="color: #ffffff;"></i></button>
+                        
+                        <button id="iniciarGravacao" 
+                        style="border:none; border-radius: 15px; width: 30px; height: 30px; background-color: white; margin-top: 12px; cursor: pointer;" class="iconGravar"><i
+                            class="fa-solid fa-circle"></i></button>
+                    
+                            <button id="reproduzirGravacao" 
+                        style="border:none; border-radius: 25px; width: 50px; height: 50px; background-color: white; cursor: pointer;" ><i
+                            class="fa-solid fa-play fa-2xl"></i></button>
+                    
+                            <button id="pararGravacao"
+                        style="border:none; border-radius: 15px; width: 30px; height: 30px; background-color: white;  margin-top: 12px; cursor: pointer;"><i
+                            class="fa-solid fa-square"></i></button>
+
+                <button style="background-color: transparent; color: white; border: none; cursor: pointer;"><i
+                        class="fa-solid fa-shuffle" style="color: #ffffff;"></i></button>
+
+            </div>
+            <div class="barraProgresso"></div>
+        </div>
+
+
+
+
+        <div class="controlesEnd">
+            <i class="fa-solid fa-sliders icon1" style="color: white ;"></i>
+            <div class="volume" style="display: flex;">
+                <i class="fa-solid fa-volume-high" style="color: #ffffff; margin-right:5px ;"></i>
+                <p class="volumeMax"></p>
+                <p class="volumeAtual"></p>
+            </div>
+            <i class="fa-solid fa-up-right-and-down-left-from-center icon2" style="color: #ffffff;"></i>
+
+        </div>
+
+
+    </div>
 
     <audio id="audio0" src="sons/do8.wav"></audio>
     <audio id="audio1" src="sons/re.wav"></audio>
@@ -122,7 +169,9 @@
 
 
 
-    <script src="main.js"></script>
+
+    <script src="script/scriptPiano.js"></script>
+    <script src="script/appPiano.js"></script>
 </body>
 
 </html>

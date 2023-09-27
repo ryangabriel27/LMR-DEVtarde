@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
  
+/* Estilização Bootstrap seguindo padrão projeto */
  body {
     margin: 0;
      background-color: lightblue;
@@ -24,6 +25,7 @@
       background-color: rgb(54, 51, 51);
       width: 100%;
       border: 0;
+ 
   }
   
   .cabecalho .nav-item, .seta {
@@ -43,7 +45,7 @@
   .cabecalho .nav {
       width: 100%;
       display: flex;
-      justify-content: center;
+    justify-content: center;
   }
   
   .cabecalho .seta {
@@ -51,20 +53,9 @@
       margin-left: 1em;
 
   }
-  
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* Estilização código */
 
 body {
     background-color: lightblue;
@@ -92,7 +83,7 @@ body {
 
 .container-main {
     background-color: black;
-    margin-top: 600px;
+    margin-top: 520px;
     width: 1200px;
     justify-content: center;
     align-items: center;
@@ -134,6 +125,7 @@ ESTILIZAÇÃO PRIMEIRA PARTE DOS BOTÕES */
     background-color: black;
     border-radius: 6px;
 box-shadow: 0 6px 0 grey;
+cursor: pointer;
 }
 
 #btn1 {
@@ -143,6 +135,7 @@ box-shadow: 0 6px 0 grey;
     background-color: black;
     border-radius: 6px;
 box-shadow: 0 6px 0 grey;
+cursor: pointer;
 }
 
 #btn2,
@@ -154,6 +147,7 @@ box-shadow: 0 6px 0 grey;
     background-color: black;
     border-radius: 6px;
 box-shadow: 0 6px 0 grey;
+cursor: pointer;
 }
 
 #btn3,
@@ -171,6 +165,7 @@ box-shadow: 0 6px 0 grey;
     background-color: black;
     border-radius: 6px;
 box-shadow: 0 6px 0 grey;
+cursor: pointer;
 }
 
 #btn10 {
@@ -180,6 +175,7 @@ box-shadow: 0 6px 0 grey;
     background-color: black;
     border-radius: 6px;
 box-shadow: 0 6px 0 grey;
+cursor: pointer;
 }
 
 
@@ -188,6 +184,7 @@ box-shadow: 0 6px 0 grey;
     width: 60px;
     background-color: white;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 #btn16,
@@ -208,23 +205,88 @@ box-shadow: 0 6px 0 grey;
     height: 275px;
     width: 60px;
     background-color: white;
+    cursor: pointer;
 }
 
-#btn0:hover,#btn1:hover,#btn2:hover,#btn3:hover,#btn4:hover,#btn5:hover,#btn6:hover,#btn7:hover,#btn8:hover,#btn9:hover,#btn10:hover,
-#bt11:hover,#btn12:hover,#btn13:hover,#btn14:hover{background-color: white;
-border: 0;
-border-radius: 6px;
-box-shadow: 0 6px 0 grey;
-
-
-}
-#btn15:hover,#btn16:hover,#btn17:hover,#btn18:hover,#btn19:hover,#btn20:hover,#btn21:hover,
-#btn22:hover,#btn23:hover,#btn24:hover,#btn25:hover,#btn26:hover,#btn27:hover,#btn28:hover,#btn29:hover,#btn30:hover{
-background-color: snow;
-
-
+.barraControles{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(32,52,52);
+    background: linear-gradient(99deg, rgba(32,52,52,1) 0%, rgba(8,20,20,1) 38%, rgba(2,11,11,1) 46%, rgba(6,16,16,1) 56%, rgba(32,52,52,1) 100%);  
+    width: 100%;
+    position: absolute;
+    height: 6em;
+    margin-top:65em; 
 }
 
+.barraControles .capad {
+    width: 60px;
+    height: 60px;
+    margin-left: 7px;
+    margin-top: 5px;
+    border-radius: 3px;
+    
+}
+.barraControles .capad .tituloMusica{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 10px;
+}
+.barraControles .capad .heart{
+    margin-left: 12px;
+    margin-top: 45px;
+}
+
+
+.controlesMain {
+    width: 20em;
+    margin-top: 10px;
+    margin-left: 140px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+#iniciarGravacao:active, #reproduzirGravacao:active, #pararGravacao:active{
+    transform: translateY(2px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.controlesEnd{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin-right: 25px;
+    margin-top: 35px;
+}
+.controlesEnd .volumeMax{
+    width:100px;
+    height: 5px;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 8px; 
+}
+.controlesEnd .volumeAtual{
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 8px;
+    position: absolute;
+    margin-left: 26px;
+}
+
+.controleCentro .barraProgresso {
+    background-color: gray;
+     width: 400px; 
+     height: 5px;
+     border-radius: 10px;
+    position: absolute;
+    margin-left: 102px;
+    margin-top: 80px;
+}
 
 
 
@@ -252,6 +314,36 @@ background-color: snow;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Responsividade TABLET */
 @media screen and (max-width:1150px) {
   
     body {
@@ -273,7 +365,6 @@ background-color: snow;
     .container-main {
         width: 800px;
         height: 232px;
-        margin-top: 560px;
         display: flex;
         padding-right: 60px;
         padding-bottom: 22px;
@@ -329,7 +420,7 @@ background-color: snow;
     #btn9,
     #btn12,
     #btn13 {
-        width: 20px;
+        width: 25px;
         height: 100px;
         transition: 0.4s;
 
@@ -387,7 +478,7 @@ background-color: snow;
 
 
 
-
+/* RESPONSIVIDADE MOBILE */
 @media screen and (max-width:768px) {
     body {
         display: flex;
@@ -401,7 +492,7 @@ background-color: snow;
         height: 169px;
         margin-top: 408px;
         display: flex;
-        padding-right: 44px;
+        padding-right: 58px;
         padding-bottom: 16px;
         transition: 0.4s;
     }
@@ -425,7 +516,6 @@ background-color: snow;
 #btn1,
 #btn0,
 #btn2, #btn3,
-
 #btn4, #btn5,
 #btn6,
 #btn7,
@@ -476,5 +566,56 @@ background-color: snow;
     transition: 0.4s;
    }
 
+
+.barraControles .capad {
+    width: 45px;
+    height: 45px;
+    margin-left: 7px;
+    margin-top: 10px;
+
+    
+}
+.barraControles .capad .tituloMusica{
+    font-size: small;
 }
 
+
+
+.controlesMain {
+    width: 12em;
+    margin-left: 120px;
+}
+
+
+.controlesEnd{
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+.controlesEnd .icon1{
+    display: none;
+}
+.controlesEnd .icon2{
+    display: none;
+}
+
+.controlesEnd .volumeMax{
+    width: 75px;
+    
+}
+.controlesEnd .volumeAtual{
+    width: 37px;
+}
+.barraControles .capad .heart{
+    display: none;
+}
+
+
+.controleCentro .barraProgresso {
+     width: 200px; 
+    margin-left: 118px;
+
+}
+
+}
