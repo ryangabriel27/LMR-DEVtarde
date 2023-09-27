@@ -6,11 +6,14 @@ let milissegundos = 0;
 
 let cron; // Variável para armazenar o identificador do intervalo de tempo (para atualizar o cronômetro).
 
-
 // Define os manipuladores de eventos para os botões de start, pause e reset.
-document.cronometro.start.onclick = () => start();
-document.cronometro.pause.onclick = () => pause();
-document.cronometro.reset.onclick = () => reset();
+document.querySelector('#start').addEventListener('click',start);
+document.querySelector('#pause').addEventListener('click',pause);
+document.querySelector('#reset').addEventListener('click',reset);
+
+// document.cronometro.start.onclick = () => start();
+// document.cronometro.pause.onclick = () => pause();
+// document.cronometro.reset.onclick = () => reset();
 
 // Função para iniciar o cronômetro.
 function start() {
