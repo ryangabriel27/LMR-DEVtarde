@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Signika+Negative&display=swap');
+
+header {
+    background-color: rgb(48, 47, 47);
+}
+
+a {
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 18px;
+}
+
+a:hover, a:focus {
+    color: rgb(196, 196, 196);
+}
